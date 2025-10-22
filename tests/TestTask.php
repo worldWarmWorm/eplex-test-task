@@ -1,11 +1,13 @@
-<?php
+<?php declare(strict_types=1);
 
-declare(strict_types=1);
+namespace Valery\Tests;
 
+use Generator;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
+use SplFixedArray;
 
-class TestTask extends TestCase
+final class TestTask extends TestCase
 {
     #[DataProvider('packProvider')]
     public function testCalculate(array $expected, array $offer, int $N): void
