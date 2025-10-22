@@ -1,0 +1,11 @@
+{
+    "name": "valery/eplex",
+    "require-dev": {
+        "phpunit/phpunit": "^12.4"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Valery\\Tests\\": "tests/"
+        }
+    }
+}
